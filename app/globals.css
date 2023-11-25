@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 130%;
+  }
+  h2 {
+    font-size: 1.7rem;
+    line-height: 130%;
+  }
+  h3 {
+    font-size: 1.3rem;
+    line-height: 130%;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +40,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
