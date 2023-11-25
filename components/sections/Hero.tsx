@@ -13,11 +13,6 @@ export const Hero: FC = () => {
 
   return (
     <div className="min-h-screen" onMouseMove={onMouseMove}>
-      {/* <Canvas className="pointer-events-none absolute">
-        <ambientLight intensity={0.3} />
-        <Particles count={100} mouse={mouse} />
-      </Canvas> */}
-
       <Particles color="#AAA" size={0.5} sizeVariance={2} speed={0.3} particleCount={30} />
 
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-4 md:gap-16 md:px-16 lg:flex-row">
