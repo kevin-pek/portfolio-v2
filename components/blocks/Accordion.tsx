@@ -8,7 +8,7 @@ interface AccordionProps {
 
 export const Accordion: FC<AccordionProps> = ({ title, skills, children }) => {
   return (
-    <div className="collapse collapse-arrow border-2 border-neutral bg-base-200">
+    <div className="collapse collapse-arrow border-2 border-neutral bg-base-200 text-neutral-content">
       <input type="checkbox" name="skills-accordion" />
       <div className="collapse-title flex flex-col gap-2">
         <h3 className="text-base-content">{title}</h3>
