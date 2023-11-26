@@ -15,5 +15,5 @@ export const GlowingCursor = () => {
     })
   }, [])
 
-  return <div id="cursorGlow" className="pointer-events-none fixed z-10 h-64 w-64 rounded-full bg-primary opacity-10 blur-[120px]" />
+  return <div id="cursorGlow" className="pointer-events-none fixed z-10 h-64 w-64 rounded-full bg-primary opacity-20 blur-[120px]" />
 }
