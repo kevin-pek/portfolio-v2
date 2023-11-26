@@ -2,9 +2,9 @@ import { Accordion } from "../blocks/Accordion"
 
 export const Experiences = () => {
   return (
-    <ul className="timeline timeline-vertical timeline-snap-icon gap-6 px-24">
+    <ul className="timeline timeline-vertical timeline-snap-icon gap-6 px-4 md:px-24">
       <li>
-        <h1 className="timeline-middle">Experience</h1>
+        <h1 className="timeline-middle text-base-content">Experience</h1>
       </li>
 
       <li>
@@ -18,7 +18,7 @@ export const Experiences = () => {
       <li>
         <div className="timeline-middle">
           <Accordion title="Full Stack Intern @ Idemia" skills={["Java", "Spring Boot"]}>
-            Developed orchestrator application for microservices in Java using Spring Boot and Apache Camel.
+            Developed orchestrator application for microservices in Java using Spring Boot and Apache Camel, and debugged various services.
           </Accordion>
         </div>
       </li>

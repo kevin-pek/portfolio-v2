@@ -29,6 +29,9 @@ const config: Config = {
         // "warning-content": "#EAAE7E", // will be inferred if not specified
         "error": "#E9678C",
         // "error-content": "#CE5076" // will be inferred if not specified
+        ".badge": {
+          "border": "none",
+        }
       },
     },{
       light: {
@@ -36,13 +39,14 @@ const config: Config = {
         ...require("daisyui/src/theming/themes")["light"],
         "primary": "#4301FF",
         "neutral": "#EAE3CD",
-        "neutral-content": "#2D282A",
+        "neutral-content": "#5D585A",
         "base-content": "#2D282A",
         "base-100": "#F9FDF0",
         "base-200": "#FCF5DF",
         ".badge": {
-          "outline-style": "solid",
-          "outline-width": "1px"
+          "border-style": "solid",
+          "border-width": "1px",
+          "border-color": "currentColor"
         }
       }
     }]
