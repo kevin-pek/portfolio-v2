@@ -18,7 +18,7 @@ export const Hero: FC = () => {
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-4 md:gap-16 md:px-16 lg:flex-row">
         <div className="flex min-h-screen flex-col justify-center gap-16 sm:mt-48 sm:min-h-fit lg:m-0 lg:w-1/2">
           <div>
-            <h1 className="text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
+            <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
             <h3 className="text-neutral-content">Third year undergraduate, studying Data Science and Computer Science at the National University of Singapore.</h3>
             <p className="mt-4 text-neutral-content">Welcome to my personal website! Here you can find some of my works, which include my past experiments with <a href="" className="hover:text-primary"><b>digital art</b></a>, as well as my <a href="" className="hover:text-primary"><b>personal blog</b></a>.</p>
           </div>
