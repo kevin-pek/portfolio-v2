@@ -14,6 +14,9 @@ export default function Home() {
         <Hero />
         <Projects />
         <Experiences />
+        <footer className="footer footer-center bg-base-200 p-10 text-base-content">
+          <aside><p>Built by me using NextJs.</p></aside>
+        </footer>
       </main>
     </>
   )

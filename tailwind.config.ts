@@ -6,19 +6,6 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      // fontFamily: {
-      //   sans: ["var(--font-geist-sans)"],
-      //   mono: ["var(--font-geist-mono)"],
-      // },
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
-    },
-  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [{
@@ -42,9 +29,22 @@ const config: Config = {
         // "warning-content": "#EAAE7E", // will be inferred if not specified
         "error": "#E9678C",
         // "error-content": "#CE5076" // will be inferred if not specified
+      },
+    },{
+      light: {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        ...require("daisyui/src/theming/themes")["light"],
+        "primary": "#4301FF",
+        "neutral": "#EAE3CD",
+        "neutral-content": "#2D282A",
+        "base-content": "#2D282A",
+        "base-100": "#F9FDF0",
+        "base-200": "#FCF5DF",
+        ".badge": {
+          "outline-style": "solid",
+        }
       }
-    },
-    "light"]
+    }]
   }
 }
 export default config

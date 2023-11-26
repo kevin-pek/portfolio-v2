@@ -10,7 +10,7 @@ import session from "/public/media/quiz-platform/quiz.png"
 
 export const Projects = () => {
   return (
-    <section className="flex flex-col items-center gap-12 px-4 md:px-16 lg:px-24">
+    <section className="flex flex-col items-center gap-12 px-4 text-base-content md:px-16 lg:px-24">
       <h1>Some Things I&apos;ve Built</h1>
 
       <div className="relative flex flex-col items-center lg:flex-row">
@@ -20,7 +20,7 @@ export const Projects = () => {
         <div className="right-0 w-full lg:absolute lg:w-1/3">
           <a target="_blank" href="https://github.com/kevin-pek/liftoff-vscode" rel="noreferrer">
             <Project title="Liftoff VS Code Theme" subheading="A Dark Theme for Visual Studio Code" tags={["VS Code", "Theme"]}>
-              Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is easy on the eyes, and well suited for late night coding sessions.
+              <p>Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is easy on the eyes, and well suited for late night coding sessions.</p>
               <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" className="lg:hidden" />
             </Project>
           </a>
