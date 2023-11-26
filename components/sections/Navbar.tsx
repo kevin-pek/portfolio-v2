@@ -34,7 +34,7 @@ export const Navbar: FC = () => {
       </ul>
 
       {/* only shows on small/mobile */}
-      <div className="drawer-side">
+      <div className="drawer-side text-base-content">
         <label htmlFor="nav-drawer" aria-label="close sidebar" className="drawer-overlay"></label> 
         <ul className="menu min-h-full w-80 bg-base-200 p-4">
           {/* Sidebar content here */}

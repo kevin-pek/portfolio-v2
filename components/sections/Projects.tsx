@@ -33,16 +33,16 @@ export const Projects = () => {
             <Project title="Pix2LaTeX" subheading="Menubar App for convenient OCR on math equations" tags={["Python", "OCR"]}>
               <p>As someone who takes notes using latex, I often find it troublesome to copy math equations.</p>
               <p>You can easily snap a portion of your screen by pressing <kbd className="kbd kbd-sm">cmd</kbd> + <kbd className="kbd kbd-sm">shift</kbd> + <kbd className="kbd kbd-sm">2</kbd>, and have the corresponding math expression expressed in latex copied to your clipboard. Toggle between native OCR and math OCR from the menubar.</p>
-              <video className="mt-4 lg:hidden" loop muted autoPlay><source src="media/pix2latex.mp4" type="video/mp4" /></video>
+              <video className="mt-4 lg:hidden" loop muted autoPlay playsInline><source src="media/pix2latex.mp4" type="video/mp4" /></video>
             </Project>
           </a>
         </div>
         <div className="right-20 hidden w-1/2 border border-primary lg:block">
-          <video loop muted autoPlay><source src="media/pix2latex.mp4" type="video/mp4" /></video>
+          <video loop muted autoPlay playsInline><source src="media/pix2latex.mp4" type="video/mp4" /></video>
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center xl:flex-row">
+      <div className="relative flex w-full flex-col items-center xl:flex-row">
         <div className="mockup-browser hidden bg-neutral xl:block xl:w-3/4">
           <div className="mockup-browser-toolbar"><div className="input">https://www.edtech-quiz-platform.com</div></div>
           <div className="carousel bg-base-200">
