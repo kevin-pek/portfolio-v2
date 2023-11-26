@@ -2,7 +2,7 @@ import { FC } from "react"
 
 export const Navbar: FC = () => {
   return (
-    <div className="fixed inset-x-0 z-40 mx-auto w-full border border-neutral bg-neutral bg-opacity-50 sm:mt-4 sm:w-fit sm:rounded-full" style={{ backdropFilter: "blur(16px)" }}>
+    <div className="fixed inset-x-0 z-40 mx-auto w-full border border-neutral bg-neutral bg-opacity-50 font-semibold sm:mt-4 sm:w-fit sm:rounded-full" style={{ backdropFilter: "blur(16px)" }}>
       {/* hidden checkbox that controls the drawer */}
       <input id="nav-drawer" type="checkbox" className="drawer-toggle" />
 

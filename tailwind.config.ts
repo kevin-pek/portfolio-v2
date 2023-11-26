@@ -42,6 +42,7 @@ const config: Config = {
         "base-200": "#FCF5DF",
         ".badge": {
           "outline-style": "solid",
+          "outline-width": "1px"
         }
       }
     }]

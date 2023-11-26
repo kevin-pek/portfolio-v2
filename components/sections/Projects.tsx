@@ -59,7 +59,7 @@ export const Projects = () => {
           <Project title="Fullstack Quiz Platform" subheading="Quiz Platform with Intelligent Recommendation System using Multi Armed Bandits" tags={["Typescript", "Python", "React", "FastAPI", "Docker", "AWS", "Machine Learning"]}>
             <p className="text-justify">The frontend user and admin interface were made using Material UI and React, with a backend server written in Express. Both codebases were written in Typescript.</p>
             <p className="text-justify">I implemented machine learning algorithms, which were then deployed as a separate backend service using FastAPI, with an additional user interface to easily change algorithms.</p>
-            <p className="text-justify">Services were containerised and deployed and AWS EC2 instance using Docker, using an Nginx webserver.</p>
+            <p className="text-justify">Services were containerised and deployed on an AWS EC2 instance using Docker, using an Nginx webserver and MySQL Database.</p>
             <div className="mockup-browser mt-4 bg-neutral xl:hidden xl:w-3/4">
               <div className="mockup-browser-toolbar"><div className="input">https://www.edtech-quiz-platform.com</div></div>
               <div className="carousel bg-base-200">
