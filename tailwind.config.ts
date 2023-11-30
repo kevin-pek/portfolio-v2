@@ -38,11 +38,11 @@ const config: Config = {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         ...require("daisyui/src/theming/themes")["light"],
         "primary": "#4301FF",
-        "neutral": "#EAE3CD",
+        "neutral": "#ddd",
         "neutral-content": "#5D585A",
         "base-content": "#2D282A",
-        "base-100": "#F9FDF0",
-        "base-200": "#FCF5DF",
+        "base-100": "#fafafa",
+        "base-200": "#f6f6f6",
         ".badge": {
           "border-style": "solid",
           "border-width": "1px",
