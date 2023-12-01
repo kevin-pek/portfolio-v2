@@ -1,22 +1,11 @@
-"use client"
 import { Hero } from "@/components/sections/Hero"
 import { GlowingCursor } from "@/components/atoms/GlowingCursor"
-import React, { useEffect } from "react"
+import React from "react"
 import { Navbar } from "@/components/sections/Navbar"
 import { Projects } from "@/components/sections/Projects"
 import { Experiences } from "@/components/sections/Experiences"
 
 export default function Home() {
-  useEffect(() => {
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      localStorage.setItem("theme", "dark")
-      document.querySelector("html")?.setAttribute("data-theme", "dark")
-    } else {
-      localStorage.setItem("theme", "light")
-      document.querySelector("html")?.setAttribute("data-theme", "light")
-    }
-  }, [])
-
   return (
     <>
       <Navbar />
