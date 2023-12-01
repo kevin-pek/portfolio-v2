@@ -5,8 +5,13 @@ import { Analytics } from "@vercel/analytics/react"
 import { GeistSans } from "geist/font/sans"
 
 export const metadata: Metadata = {
-  title: "Kevin Pek",
-  description: "My personal website and portfolio.",
+  title: "Kevin Pek's Website",
+  description: "Kevin's personal website and portfolio.",
+  keywords: ["software engineer", "machine learning", "NUS", "computer science", "data science", "statistics", "math", "react", "nextjs", "tailwindcss"],
+  manifest: "manifest.json",
+  openGraph: {
+    images: "/favicon-32x32.png"
+  }
 }
 
 export default function RootLayout({

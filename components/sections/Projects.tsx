@@ -11,7 +11,7 @@ import session from "/public/media/quiz-platform/quiz.png"
 export const Projects = () => {
   return (
     <section className="flex flex-col items-center gap-12 px-4 text-base-content md:px-16 lg:px-24">
-      <h1>Some Things I&apos;ve Built</h1>
+      <h1>Some Things I&apos;ve Made</h1>
 
       <div className="relative flex flex-col items-center lg:flex-row">
         <div className="hidden lg:block lg:w-3/4">
@@ -32,7 +32,7 @@ export const Projects = () => {
           <a target="_blank" href="https://github.com/kevin-pek/pix2latex" rel="noreferrer">
             <Project title="Pix2LaTeX" subheading="Menubar App for convenient OCR on math equations" tags={["Python", "OCR"]}>
               <p>As someone who takes notes using latex, I often find it troublesome to copy math equations.</p>
-              <p>You can easily snap a portion of your screen by pressing <kbd className="kbd kbd-sm">cmd</kbd> + <kbd className="kbd kbd-sm">shift</kbd> + <kbd className="kbd kbd-sm">2</kbd>, and have the corresponding math expression expressed in latex copied to your clipboard. Toggle between native OCR and math OCR from the menubar.</p>
+              <p>With this menubar app, you can easily snap a portion of your screen by pressing <kbd className="kbd kbd-sm">cmd</kbd> + <kbd className="kbd kbd-sm">shift</kbd> + <kbd className="kbd kbd-sm">2</kbd>, and have the corresponding math expression expressed in latex copied to your clipboard. Toggle between native OCR and math OCR from the menubar.</p>
               <video className="mt-4 lg:hidden" loop muted autoPlay playsInline><source src="media/pix2latex.mp4" type="video/mp4" /></video>
             </Project>
           </a>

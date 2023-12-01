@@ -20,7 +20,7 @@ export const Hero: FC = () => {
           <div>
             <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
             <h3 className="text-neutral-content">Third year undergraduate, studying Data Science and Computer Science at the National University of Singapore.</h3>
-            <p className="mt-4 text-neutral-content">Welcome to my personal website! Here you can find some of my works, which include my past experiments with <a href="" className="hover:text-primary"><b>digital art</b></a>, as well as my <a href="" className="hover:text-primary"><b>personal blog</b></a>.</p>
+            <p className="mt-4 text-neutral-content">Welcome to my personal website! Here you can find some of my works, which include my past projects I do in my free time, as well as my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>personal blog</b></a>.</p>
           </div>
           <div>
             <a target='_blank' href='files/resume.pdf' className="btn btn-outline btn-primary rounded-none">Resume</a>
@@ -47,20 +47,20 @@ export const Hero: FC = () => {
         <div className="flex flex-col gap-6 lg:w-1/2">
           <div>
             <h2 className="mb-3 text-base-content">About Me</h2>
-            <p className="text-justify text-neutral-content">Back in 2013, I created my first terminal based game using C++. This led me down the rabbit hole into the world of programming and web development. I spent a good number of my early years focused on game development and interactive media on the web.</p>
+            <p className="text-justify text-neutral-content">Back in 2013, I created my first terminal based game using C++. This led me down the rabbit hole into the world of programming. I spent a good number of my early years focused on game development and interactive media.</p>
           </div>
 
-          <p className="text-justify text-neutral-content">Fast forward to today, I am an aspiring machine learning engineer, and am interested in bringing the power of mathematics to real world applications through high performance code.</p>
+          <p className="text-justify text-neutral-content">Fast forward to today, my interests have broadened to also include machine learning and software engineering, and I am interested in using technology to improve lives.</p>
 
           <section className="mt-8 flex flex-col gap-4">
-            <h2 className="text-base-content">My Interests and Skills</h2>
+            <h2 className="text-base-content">Skills</h2>
 
-            <Accordion title="Programming Languages" skills={["Typescript/Javascript", "Python", "R", "Java", "C#", "C"]}>
-              <p>These are the programming languages I have worked recently, through various university, project and work experiences.</p>
+            <Accordion title="Programming Languages" skills={["Typescript/Javascript", "Python", "R", "Java", "C"]}>
+              <p>I have worked with many different programming langauges over the years, some of which are not mentioned here (as I am probably rusty with them). I am also currently learning the Go programming language.</p>
             </Accordion>
 
             <Accordion title="Web Development" skills={["Docker", "React", "NextJs", "Express", "FastAPI", "Flask", "Django", "Spring Boot"]}>
-              <p>I have worked on several projects mainly using React (including React Native) and NextJs, using various libaries.</p>
+              <p>My first major step into the world of modern web development was in 2019 when I completed the CS50W course. Since then I have become well acquainted with various other web technologies through projects and internship experiences.</p>
             </Accordion>
           </section>
         </div>
