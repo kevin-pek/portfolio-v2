@@ -7,7 +7,7 @@ import { GeistSans } from "geist/font/sans"
 export const metadata: Metadata = {
   title: "Kevin Pek's Website",
   description: "Kevin's personal website and portfolio.",
-  keywords: ["software engineer", "machine learning", "NUS", "computer science", "data science", "statistics", "math", "react", "nextjs", "tailwindcss"],
+  keywords: ["software engineer", "machine learning", "NUS", "computer science", "data science", "statistics", "math", "react", "nextjs", "tailwindcss", "singapore"],
   manifest: "manifest.json",
   openGraph: {
     images: "/favicon-32x32.png"
