@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   manifest: "manifest.json",
   openGraph: {
     images: "/favicon-32x32.png"
-  }
+  },
+  metadataBase: new URL("https://kevinpek.com")
 }
 
 export default function RootLayout({

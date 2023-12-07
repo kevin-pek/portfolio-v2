@@ -40,7 +40,7 @@ export const Navbar: FC = () => {
         <li className="hidden sm:block"><a href="https://blog.kevinpek.com" className="rounded-full hover:bg-transparent hover:text-primary">Blog</a></li>
 
         {/* dark mode button - stays for all screen sizes */}
-        <label className="btn swap border-none hover:text-primary sm:rounded-full sm:bg-neutral">
+        <label className="btn swap border-none bg-transparent hover:text-primary sm:rounded-full sm:bg-neutral">
           {/* hidden checkbox controlling state */}
           <input type="checkbox" onClick={toggleTheme} />
           
