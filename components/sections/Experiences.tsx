@@ -4,7 +4,7 @@ export const Experiences = () => {
   return (
     <ul className="timeline timeline-vertical timeline-snap-icon gap-6 px-4 md:px-24">
       <li>
-        <h1 className="timeline-middle text-base-content">Experience</h1>
+        <h1 className="timeline-middle text-base-content">Notable Experience</h1>
       </li>
 
       <li>
