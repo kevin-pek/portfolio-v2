@@ -15,7 +15,7 @@ export const Hero: FC = () => {
     <div className="min-h-screen" onMouseMove={onMouseMove}>
       <Particles color="#AAA" size={0.5} sizeVariance={2} speed={0.3} particleCount={30} />
 
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-4 md:gap-16 md:px-16 lg:flex-row">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-4 md:gap-16 md:px-16 lg:mt-32 lg:flex-row lg:items-start">
         <div className="flex min-h-screen flex-col justify-center gap-16 sm:mt-48 sm:min-h-fit lg:m-0 lg:w-1/2">
           <div>
             <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
