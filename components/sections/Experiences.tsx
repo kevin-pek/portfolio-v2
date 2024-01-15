@@ -9,8 +9,8 @@ export const Experiences = () => {
 
       <li>
         <div className="timeline-middle">
-          <Accordion title="Research Assistant @ NUS Insitute of Operations Research and Analytics, NCS" skills={["Python", "Numerical Methods"]}>
-            Exploratory data analysis on time series temperature and humidity data using Python. Created low fidelity model of heat distribution within Data Center using the Finite Volume Method, optimising convergence speed and accuracy.
+          <Accordion title="Research Assistant @ NUS Insitute of Operations Research and Analytics, NCS" skills={["Python", "PyTorch", "Microsoft Azure Machine Learning", "Numerical Methods"]}>
+            Exploratory data analysis on time series temperature and humidity data using Python. Created low fidelity model of heat distribution within Data Center using the Finite Volume Method, optimising convergence speed and accuracy. Optimised forecasting model for predicting temperature and power usage in Data Center.
           </Accordion>
         </div>
       </li>
