@@ -47,20 +47,24 @@ export const Hero: FC = () => {
         <div className="flex flex-col gap-6 lg:w-1/2">
           <div>
             <h2 className="mb-3 text-base-content">About Me</h2>
-            <p className="text-justify text-neutral-content">Back in 2013, I created my first terminal based game using C++. This led me down the rabbit hole into the world of programming. I spent a good number of my early years focused on game development and interactive media.</p>
+            <p className="text-justify text-neutral-content">Back in 2013, I created my first terminal based game using C++. This led me down the rabbit hole into the world of programming. I spent a good number of my early years focused on game development and working on computer graphics.</p>
           </div>
 
-          <p className="text-justify text-neutral-content">Fast forward to today, my interests have broadened to also include machine learning and software engineering, and I am interested in using technology to improve lives.</p>
+          <p className="text-justify text-neutral-content">Fast forward to today, my interests have broadened to also include machine learning and software engineering, and I am interested in finding ways to improve lives through AI technology.</p>
 
           <section className="mt-8 flex flex-col gap-4">
             <h2 className="text-base-content">Skills</h2>
 
             <Accordion title="Programming Languages" skills={["Typescript/Javascript", "Python", "R", "Java", "C"]}>
-              <p>I have worked with many different programming langauges over the years, some of which are not mentioned here (as I am probably rusty with them). I am also currently learning the Go programming language.</p>
+              <p>I have worked with many different programming langauges over the years, some of which are not mentioned here. I am also currently learning the Go programming language.</p>
             </Accordion>
 
-            <Accordion title="Web Development" skills={["Docker", "React", "NextJs", "Express", "FastAPI", "Flask", "Django", "Spring Boot"]}>
+            <Accordion title="Software Development" skills={["Docker", "React", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "Git", "Linux"]}>
               <p>My first major step into the world of modern web development was in 2019 when I completed the CS50W course. Since then I have become well acquainted with various other web technologies through projects and internship experiences.</p>
+            </Accordion>
+
+            <Accordion title="Machine Learning" skills={["pytorch", "scikit-learn"]}>
+              <p>A good portion of my course work revolves around machine learning, statistics and optimisation.</p>
             </Accordion>
           </section>
         </div>

@@ -7,6 +7,9 @@ import quiz from "/public/media/quiz-platform/manage-quiz.png"
 import user from "/public/media/quiz-platform/manage-user.png"
 import model from "/public/media/quiz-platform/manage-model.png"
 import session from "/public/media/quiz-platform/quiz.png"
+import pdf1 from "/public/media/pdfsearch/pdfsearch-1.png"
+import pdf2 from "/public/media/pdfsearch/pdfsearch-2.png"
+import pdf3 from "/public/media/pdfsearch/pdfsearch-3.png"
 
 export const Projects = () => {
   return (
@@ -15,13 +18,24 @@ export const Projects = () => {
 
       <div className="relative flex flex-col items-center lg:flex-row">
         <div className="hidden lg:block lg:w-3/4">
-          <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" />
+          <div className="right-20 hidden border border-primary lg:block">
+            <div className="carousel bg-base-200">
+              <Image placeholder="blur" src={pdf3} alt="pdfsearch" className="carousel-item" />
+              <Image placeholder="blur" src={pdf2} alt="pdfsearch" className="carousel-item" />
+              <Image placeholder="blur" src={pdf1} alt="pdfsearch" className="carousel-item" />
+            </div>
+          </div>
         </div>
         <div className="right-0 w-full lg:absolute lg:w-1/3">
-          <a target="_blank" href="https://github.com/kevin-pek/liftoff-vscode" rel="noreferrer">
-            <Project title="Liftoff VS Code Theme" subheading="A Dark Theme for Visual Studio Code" tags={["VS Code", "Theme"]}>
-              <p>Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is easy on the eyes, and well suited for late night coding sessions.</p>
-              <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" className="lg:hidden" />
+          <a target="_blank" href="https://github.com/kevin-pek/pdfsearch" rel="noreferrer">
+            <Project title="PDFSearch" subheading="A Raycast Extension to search through multiple PDF files" tags={["Typescript", "React", "Swift", "NLP"]}>
+              <p>This extension allows you to create your own collections of PDF files and perform search through all of them at once, highlighting the detected paragraph of text that answers your search query.</p>
+              <p>Search results are ranked in order of semantic similarity to the search query, using Apple&apos;s Natural Language framework.</p>
+              <div className="carousel bg-base-200 lg:hidden">
+                <Image placeholder="blur" src={pdf3} alt="pdfsearch" className="carousel-item" />
+                <Image placeholder="blur" src={pdf2} alt="pdfsearch" className="carousel-item" />
+                <Image placeholder="blur" src={pdf1} alt="pdfsearch" className="carousel-item" />
+              </div>
             </Project>
           </a>
         </div>
@@ -54,8 +68,8 @@ export const Projects = () => {
             <Image placeholder="blur" src={session} alt="quiz platform" className="carousel-item" />
           </div>
         </div>
-        <div className="right-0 w-full xl:absolute xl:w-5/12">
 
+        <div className="right-0 w-full xl:absolute xl:w-5/12">
           <Project title="Fullstack Quiz Platform" subheading="Quiz Platform with Intelligent Recommendation System using Multi Armed Bandits" tags={["Typescript", "Python", "React", "FastAPI", "Docker", "AWS", "Machine Learning"]}>
             <p className="text-justify">The frontend user and admin interface were made using Material UI and React, with a backend server written in Express. Both codebases were written in Typescript.</p>
             <p className="text-justify">I implemented machine learning algorithms, which were then deployed as a separate backend service using FastAPI, with an additional user interface to easily change algorithms.</p>
@@ -72,6 +86,20 @@ export const Projects = () => {
               </div>
             </div>
           </Project>
+        </div>
+      </div>
+    
+      <div className="relative flex flex-col items-center lg:flex-row">
+        <div className="hidden lg:block lg:w-3/4">
+          <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" />
+        </div>
+        <div className="right-0 w-full lg:absolute lg:w-1/3">
+          <a target="_blank" href="https://github.com/kevin-pek/liftoff-vscode" rel="noreferrer">
+            <Project title="Liftoff VS Code Theme" subheading="A Dark Theme for Visual Studio Code" tags={["VS Code", "Theme"]}>
+              <p>Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is easy on the eyes, and well suited for late night coding sessions.</p>
+              <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" className="lg:hidden" />
+            </Project>
+          </a>
         </div>
       </div>
     </section>
