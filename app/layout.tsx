@@ -22,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <meta name="apple-mobile-app-status-bar-style" content="black-translucent" />
       <body className={GeistSans.className}>{children}</body>
       <Analytics />
     </html>
