@@ -7,16 +7,19 @@ export const Navbar: FC = () => {
   
   useEffect(() => {
     if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      document.documentElement.classList.add("dark")
       setTheme("dark")
     } else {
-      document.documentElement.classList.remove("dark")
       setTheme("light")
     }
   }, [])
   
   useEffect(() => {
     if (theme) {
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark")
+      } else {
+        document.documentElement.classList.remove("dark")
+      }
       localStorage.setItem("theme", theme)
       document.documentElement.setAttribute("data-theme", theme)
     }
