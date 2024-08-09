@@ -14,7 +14,7 @@ import pdf3 from "/public/media/pdfsearch/pdfsearch-3.png"
 export const Projects = () => {
   return (
     <section className="flex flex-col items-center gap-12 px-4 text-base-content md:px-16 lg:px-24">
-      <h1>Some Things I&apos;ve Made</h1>
+      <h1>Other Things I&apos;ve Made</h1>
 
       <div className="relative flex flex-col items-center lg:flex-row">
         <div className="hidden lg:block lg:w-3/4">
@@ -28,9 +28,8 @@ export const Projects = () => {
         </div>
         <div className="right-0 w-full lg:absolute lg:w-1/3">
           <a target="_blank" href="https://github.com/kevin-pek/pdfsearch" rel="noreferrer">
-            <Project title="PDFSearch" subheading="A Raycast Extension to search through multiple PDF files" tags={["Typescript", "React", "Swift", "NLP"]}>
-              <p>This extension allows you to create your own collections of PDF files and perform search through all of them at once, highlighting the detected paragraph of text that answers your search query.</p>
-              <p>Search results are ranked in order of semantic similarity to the search query, using Apple&apos;s Natural Language framework.</p>
+            <Project title="PDFSearch" subheading="Open Source Raycast Extension" tags={["Typescript", "React", "NodeJS", "Swift", "SearchKit"]}>
+              <p>Create collections of PDF/text files and search through all of them at once.</p>
               <div className="carousel bg-base-200 lg:hidden">
                 <Image placeholder="blur" src={pdf3} alt="pdfsearch" className="carousel-item" />
                 <Image placeholder="blur" src={pdf2} alt="pdfsearch" className="carousel-item" />
@@ -45,8 +44,7 @@ export const Projects = () => {
         <div className="left-4 w-full lg:w-1/2 xl:absolute">
           <a target="_blank" href="https://github.com/kevin-pek/pix2latex" rel="noreferrer">
             <Project title="Pix2LaTeX" subheading="Menubar App for convenient OCR on math equations" tags={["Python", "OCR"]}>
-              <p>As someone who takes notes using latex, I often find it troublesome to copy math equations.</p>
-              <p>With this menubar app, you can easily snap a portion of your screen by pressing <kbd className="kbd kbd-sm">cmd</kbd> + <kbd className="kbd kbd-sm">shift</kbd> + <kbd className="kbd kbd-sm">2</kbd>, and have the corresponding math expression expressed in latex copied to your clipboard. Toggle between native OCR and math OCR from the menubar.</p>
+              <p>Menubar app for OCR using <kbd className="kbd kbd-sm">cmd</kbd> + <kbd className="kbd kbd-sm">shift</kbd> + <kbd className="kbd kbd-sm">2</kbd> to have math expression in latex copied to clipboard. Toggle between native OCR and math OCR from the menubar.</p>
               <video className="mt-4 lg:hidden" loop muted autoPlay playsInline><source src="media/pix2latex.mp4" type="video/mp4" /></video>
             </Project>
           </a>
@@ -56,39 +54,6 @@ export const Projects = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-col items-center xl:flex-row">
-        <div className="mockup-browser hidden bg-neutral xl:block xl:w-3/4">
-          <div className="mockup-browser-toolbar"><div className="input">https://www.edtech-quiz-platform.com</div></div>
-          <div className="carousel bg-base-200">
-            <Image placeholder="blur" src={dashboard} alt="quiz platform" className="carousel-item" />
-            <Image placeholder="blur" src={dashboard2} alt="quiz platform" className="carousel-item" />
-            <Image placeholder="blur" src={user} alt="quiz platform" className="carousel-item" />
-            <Image placeholder="blur" src={quiz} alt="quiz platform" className="carousel-item" />
-            <Image placeholder="blur" src={model} alt="quiz platform" className="carousel-item" />
-            <Image placeholder="blur" src={session} alt="quiz platform" className="carousel-item" />
-          </div>
-        </div>
-
-        <div className="right-0 w-full xl:absolute xl:w-5/12">
-          <Project title="Fullstack Quiz Platform" subheading="Quiz Platform with Intelligent Recommendation System using Multi Armed Bandits" tags={["Typescript", "Python", "React", "FastAPI", "Docker", "AWS", "Machine Learning"]}>
-            <p className="text-justify">The frontend user and admin interface were made using Material UI and React, with a backend server written in Express. Both codebases were written in Typescript.</p>
-            <p className="text-justify">I implemented machine learning algorithms, which were then deployed as a separate backend service using FastAPI, with an additional user interface to easily change algorithms.</p>
-            <p className="text-justify">Services were containerised and deployed on an AWS EC2 instance using Docker, using an Nginx webserver and MySQL Database.</p>
-            <div className="mockup-browser mt-4 bg-neutral xl:hidden xl:w-3/4">
-              <div className="mockup-browser-toolbar"><div className="input">https://www.edtech-quiz-platform.com</div></div>
-              <div className="carousel bg-base-200">
-                <Image placeholder="blur" src={dashboard} alt="quiz platform" className="carousel-item" />
-                <Image placeholder="blur" src={dashboard2} alt="quiz platform" className="carousel-item" />
-                <Image placeholder="blur" src={user} alt="quiz platform" className="carousel-item" />
-                <Image placeholder="blur" src={quiz} alt="quiz platform" className="carousel-item" />
-                <Image placeholder="blur" src={model} alt="quiz platform" className="carousel-item" />
-                <Image placeholder="blur" src={session} alt="quiz platform" className="carousel-item" />
-              </div>
-            </div>
-          </Project>
-        </div>
-      </div>
-    
       <div className="relative flex flex-col items-center lg:flex-row">
         <div className="hidden lg:block lg:w-3/4">
           <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" />

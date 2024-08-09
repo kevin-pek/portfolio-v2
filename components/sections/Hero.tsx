@@ -12,59 +12,62 @@ export const Hero: FC = () => {
   }
 
   return (
-    <div className="min-h-screen" onMouseMove={onMouseMove}>
+    <div onMouseMove={onMouseMove}>
       <Particles color="#AAA" size={0.5} sizeVariance={2} speed={0.3} particleCount={30} />
 
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-evenly px-4 md:gap-16 md:px-16 lg:mt-32 lg:flex-row lg:items-start">
-        <div className="flex min-h-screen flex-col justify-center gap-16 sm:mt-48 sm:min-h-fit lg:m-0 lg:w-1/2">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-evenly gap-16 px-4 md:px-16 lg:mt-32 lg:flex-row lg:items-start">
+        <div className="mt-40 flex flex-col justify-center gap-16 lg:m-0 lg:w-1/2">
           <div>
             <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
-            <h3 className="text-neutral-content">Third year undergraduate, studying Data Science and Computer Science at the National University of Singapore.</h3>
-            <p className="mt-4 text-neutral-content">Welcome to my personal website! Here you can find some of my works, which include my past projects I do in my free time, as well as my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>personal blog</b></a>.</p>
+
+            <h3 className="text-neutral-content">I like Computer Science, Math, Design, and everything in between.</h3>
+            <p className="mt-6 text-neutral-content">I enjoy building things and learning new skills, and I believe in making the world better through good design and software.</p>
+            <p className="mt-3 text-neutral-content">Over here you can find my work experience and some of my side projects. Occasionally I share how I solved problems that are interesting to me and nerd out about random things on my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>personal blog</b></a>.</p>
           </div>
           <div>
             <a target='_blank' href='files/resume.pdf' className="btn btn-outline btn-primary rounded-none">Resume</a>
+            <footer className="footer mt-5">
+              <nav>
+                <div className="grid grid-flow-col gap-4 text-base-content">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/kevin-pek" className="hover:text-primary">
+                    <svg viewBox="0 0 128 128" className="fill-current" width={24} height={24}>
+                      <g><path fillRule="evenodd" clipRule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
+                    </svg>
+                  </a> 
+                  <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/kevin-pek-yt" className="hover:text-primary">
+                    <svg viewBox="0 0 128 128" className="fill-current" width={24} height={24}>
+                      <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
+                    </svg>
+                  </a> 
+                </div>
+              </nav>
+            </footer>
           </div>
-          <footer className="footer">
-            <nav>
-              <header className="footer-title text-base-content">Social</header>
-              <div className="grid grid-flow-col gap-4 text-base-content">
-                <a target="_blank" rel="noreferrer" href="https://github.com/kevin-pek" className="hover:text-primary">
-                  <svg viewBox="0 0 128 128" className="fill-current" width={24} height={24}>
-                    <g><path fillRule="evenodd" clipRule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
-                  </svg>
-                </a> 
-                <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/kevin-pek-yt" className="hover:text-primary">
-                  <svg viewBox="0 0 128 128" className="fill-current" width={24} height={24}>
-                    <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
-                  </svg>
-                </a> 
-              </div>
-            </nav>
-          </footer>
         </div>
 
         <div className="flex flex-col gap-6 lg:w-1/2">
           <div>
-            <h2 className="mb-3 text-base-content">About Me</h2>
-            <p className="text-justify text-neutral-content">Back in 2013, I created my first terminal based game using C++. This led me down the rabbit hole into the world of programming. I spent a good number of my early years focused on game development and working on computer graphics.</p>
+            <h2 className="text-base-content">About Me</h2>
+            <p className="mt-4 text-neutral-content">Back in 2013, I wrote my first &quot;Hello World&quot; program in C++. This started from my interest in game development, and a strong desire to build experiences that bring joy to others.</p>
+            <p className="mt-3 text-neutral-content">Since then, my interests have broadened significantly, and my lifelong goal is to find ways to apply the knowledge I have learnt to solve problems and make a difference.</p>
           </div>
-
-          <p className="text-justify text-neutral-content">Fast forward to today, my interests have broadened to also include machine learning and software engineering, and I am interested in finding ways to improve lives through AI technology.</p>
 
           <section className="mt-8 flex flex-col gap-4">
             <h2 className="text-base-content">Skills</h2>
-
-            <Accordion title="Programming Languages" skills={["Typescript/Javascript", "Python", "R", "Java", "C"]}>
-              <p>I have worked with many different programming langauges over the years, some of which are not mentioned here. I am also currently learning the Go programming language.</p>
+            <Accordion title="Data Science" skills={["sklearn", "PyTorch", "PaddlePaddle"]}>
+              <p>I started learning about Data Science through a course &quot;Machine Learning A-Z&quot; on Udemy in 2019. Around this time I also came across <a href="https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/" className="hover:text-primary"><b>NVIDIA&apos;s GauGAN</b></a>, kickstarting my fascination with Deep Learning. My undergraduate studies and internship experiences have further deepened this knowledge, and I enjoy reading about leading AI research.</p>
             </Accordion>
 
-            <Accordion title="Software Development" skills={["Docker", "React", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "Git", "Linux"]}>
-              <p>My first major step into the world of modern web development was in 2019 when I completed the CS50W course. Since then I have become well acquainted with various other web technologies through projects and internship experiences.</p>
+            <Accordion title="Web Development" skills={["React", "NodeJS", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "HTML", "CSS", "TailwindCSS", "AlpineJS", "Astro", "Django"]}>
+              <p>I started my journey into web development in 2019 through the Harvard&apos;s CS50W course. Since then I have become well acquainted with web technologies through various projects and internship experiences.</p>
             </Accordion>
 
-            <Accordion title="Machine Learning" skills={["pytorch", "scikit-learn"]}>
-              <p>A good portion of my course work revolves around machine learning, statistics and optimisation.</p>
+            <Accordion title="Tools" skills={["Docker", "Git", "Bash", "AWS", "GCP", "Azure"]}>
+              <p>Working on various projects and internships, where I containerised or deployed applications and trained models using different cloud providers, has given me a familiarity with the platforms, version control, scripting, and the command line.</p>
+            </Accordion>
+
+            <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
+              <p>My journey from wannabe game developer to data science and full stack development has led me to try out various programming languages. It is always interresting to learn a new programming language and learn about it&apos; history and the problem it tries to solve.</p>
             </Accordion>
           </section>
         </div>

@@ -45,6 +45,7 @@ export const Navbar: FC = () => {
         </label>
           
         <li className="hidden sm:block"><a href="https://www.kevinpek.com" className="rounded-full hover:bg-transparent hover:text-primary">About</a></li>
+        {/* <li className="hidden sm:block"><a href="https://www.kevinpek.com/gallery" className="rounded-full hover:bg-transparent hover:text-primary">Gallery</a></li> */}
         <li className="hidden sm:block"><a href="https://blog.kevinpek.com" className="rounded-full hover:bg-transparent hover:text-primary">Blog</a></li>
 
         {/* dark mode button - stays for all screen sizes */}
@@ -70,6 +71,7 @@ export const Navbar: FC = () => {
         <ul className="menu min-h-full w-80 bg-base-200 p-4">
           {/* Sidebar content here */}
           <li><a href="https://www.kevinpek.com">About</a></li>
+          {/* <li><a href="https://www.kevinpek.com/gallery">Gallery</a></li> */}
           <li><a href="https://blog.kevinpek.com">Blog</a></li>
         </ul>
       </div>

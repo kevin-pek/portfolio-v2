@@ -12,8 +12,8 @@ export default function Home() {
       <GlowingCursor />
       <main className="flex min-h-screen flex-col gap-16 bg-base-100">
         <Hero />
-        <Projects />
         <Experiences />
+        <Projects />
         <footer className="footer footer-center z-10 bg-base-200 p-10 text-base-content">
           <aside className="max-w-lg"><p>Designed and built by me using NextJs, TailwindCSS, DaisyUI, deployed using Vercel. Written in Typescript. Available on Github <a target="_blank" rel="noreferrer" href="https://github.com/kevin-pek/portfolio-v2" className="font-bold hover:text-primary">here</a>.</p></aside>
         </footer>
