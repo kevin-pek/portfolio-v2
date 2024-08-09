@@ -22,7 +22,7 @@ export const Experiences = () => {
       </Accordion>
 
       <Accordion title="Modelling and Simulations Intern @ DSTA" skills={["C#", "Unity", "Reinforcement Learning"]}>
-        Created drone flight simulation training environment in Unity. Used Unity's ML Agents package to train a reinforcement learning agent to be used alongside computer vision model and Octree bsaed 3D pathfinding algorithm.
+        Created drone flight simulation training environment in Unity. Used Unity&apos;s ML Agents package to train a reinforcement learning agent to be used alongside computer vision model and Octree bsaed 3D pathfinding algorithm.
       </Accordion>
     </div>
   )
