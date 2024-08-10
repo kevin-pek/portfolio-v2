@@ -63,11 +63,11 @@ export const Hero: FC = () => {
             </Accordion>
 
             <Accordion title="Tools" skills={["Docker", "Git", "Bash", "AWS", "GCP", "Azure"]}>
-              <p>Working on various projects and internships, where I containerised or deployed applications and trained models using different cloud providers, has given me a familiarity with the platforms, version control, scripting, and the command line.</p>
+              <p>Working on various projects and internships, I have containerised and deployed applications, as well as trained models on various cloud platforms. This experience has provided me with a strong familiarity in working with cloud environments, version control systems, scripting, and the command line.</p>
             </Accordion>
 
             <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
-              <p>My journey from wannabe game developer to data science and full stack development has led me to try out various programming languages. It is always interresting to learn a new programming language and learn about it&apos; history and the problem it tries to solve.</p>
+              <p>My journey from wannabe game developer to data science and full stack development has led me to try out various programming languages. It is always interesting to learn a new programming language, what it is being used for, and the problem it tries to solve.</p>
             </Accordion>
           </section>
         </div>

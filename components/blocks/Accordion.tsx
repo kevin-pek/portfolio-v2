@@ -12,7 +12,7 @@ export const Accordion: FC<AccordionProps> = ({ title, skills, children }) => {
       <input type="checkbox" name="skills-accordion" />
       <div className="collapse-title flex flex-col gap-2">
         <h3 className="text-base-content">{title}</h3>
-        <ul className="flex flex-row flex-wrap justify-start gap-2">
+        <ul className="pointer-events-none flex flex-row flex-wrap justify-start gap-2">
           {skills.map((s, i) => (
             typeof s === "string" ?
               <li key={i} className="badge bg-primary-content text-primary">{s}</li> :
