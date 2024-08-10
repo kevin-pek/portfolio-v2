@@ -25,6 +25,18 @@ export const Navbar: FC = () => {
     if (theme) {
       localStorage.setItem("theme", theme)
       document.documentElement.setAttribute("data-theme", theme)
+      // Update manifest theme color
+      const manifest = document.querySelector("link[rel=\"manifest\"]")
+      if (manifest) {
+        fetch(manifest.href)
+          .then((response) => response.json())
+          .then((data) => {
+            data.theme_color = theme === "dark" ? "#000000" : "#ffffff"
+            const blob = new Blob([JSON.stringify(data)], { type: "application/json" })
+            const url = URL.createObjectURL(blob)
+            manifest.href = url
+          })
+      }
     }
   }, [theme])
 
@@ -68,7 +80,7 @@ export const Navbar: FC = () => {
       {/* only shows on small/mobile */}
       <div className="drawer-side text-base-content">
         <label htmlFor="nav-drawer" aria-label="close sidebar" className="drawer-overlay"></label> 
-        <ul className="menu min-h-full w-80 bg-base-200 p-4">
+        <ul className="menu min-h-full w-80 bg-base-200 p-4 pt-8 text-2xl">
           {/* Sidebar content here */}
           <li><a href="https://www.kevinpek.com">About</a></li>
           {/* <li><a href="https://www.kevinpek.com/gallery">Gallery</a></li> */}
