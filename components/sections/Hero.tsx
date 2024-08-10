@@ -59,15 +59,15 @@ export const Hero: FC = () => {
             </Accordion>
 
             <Accordion title="Web Development" skills={["React", "NodeJS", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "HTML", "CSS", "TailwindCSS", "AlpineJS", "Astro", "Django"]}>
-              <p>I started my journey into web development in 2019 through the Harvard&apos;s CS50W course. Since then I have become well acquainted with web technologies through various projects and internship experiences.</p>
+              <p>I started my journey into web development in 2019 through the Harvard&apos;s CS50W course. Since then I have become well acquainted with full stack development through various projects and internship experiences.</p>
             </Accordion>
 
             <Accordion title="Tools" skills={["Docker", "Git", "Bash", "AWS", "GCP", "Azure"]}>
-              <p>Working on various projects and internships, I have containerised and deployed applications, as well as trained models on various cloud platforms. This experience has provided me with a strong familiarity in working with cloud environments, version control systems, scripting, and the command line.</p>
+              <p>Through various internships, school assignments, and personal projects, I have containerized and deployed applications, and trained models on multiple cloud platforms. These experiences have made me proficient in cloud environments, version control, scripting, and working with the Linux terminal.</p>
             </Accordion>
 
             <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
-              <p>My journey from wannabe game developer to data science and full stack development has led me to try out various programming languages. It is always interesting to learn a new programming language, what it is being used for, and the problem it tries to solve.</p>
+              <p>My journey from aspiring game developer to data sciencist and full stack developer has exposed me to a wide array of programming languages. I find it interesting to learn new languages, understand their applications, and explore the problems they aim to solve.</p>
             </Accordion>
           </section>
         </div>
