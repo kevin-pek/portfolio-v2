@@ -22,6 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181721" />
+      </head>
       <body className={GeistSans.className}>{children}</body>
       <Analytics />
     </html>
