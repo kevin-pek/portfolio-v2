@@ -26,7 +26,7 @@ export const Navbar: FC = () => {
       localStorage.setItem("theme", theme)
       document.documentElement.setAttribute("data-theme", theme)
       // Update manifest theme color
-      const manifest = document.querySelector("link[rel=\"manifest\"]")
+      const manifest = document.querySelector<HTMLLinkElement>("link[rel=\"manifest\"]")
       if (manifest) {
         fetch(manifest.href)
           .then((response) => response.json())
