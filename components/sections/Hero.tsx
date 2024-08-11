@@ -67,7 +67,7 @@ export const Hero: FC = () => {
             </Accordion>
 
             <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
-              <p>My journey from aspiring game developer to data sciencist and full stack developer has exposed me to a wide array of programming languages. I find it interesting to learn new languages, understand their applications, and explore the problems they aim to solve.</p>
+              <p>My journey from aspiring game developer to data scientist and full stack developer has exposed me to a wide array of programming languages. I find it interesting to learn new languages, understand their applications, and explore the problems they aim to solve.</p>
             </Accordion>
           </section>
         </div>
