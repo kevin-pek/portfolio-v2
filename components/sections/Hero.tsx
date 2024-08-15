@@ -55,19 +55,19 @@ export const Hero: FC = () => {
           <section className="mt-8 flex flex-col gap-4">
             <h2 className="text-base-content">Skills</h2>
             <Accordion title="Data Science" skills={["sklearn", "PyTorch", "PaddlePaddle"]}>
-              <p>I started learning about Data Science through a course &quot;Machine Learning A-Z&quot; on Udemy in 2019. Around this time I also came across <a href="https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/" className="hover:text-primary"><b>NVIDIA&apos;s GauGAN</b></a>, kickstarting my fascination with Deep Learning. My undergraduate studies and internship experiences have further deepened this knowledge, and I enjoy reading about leading AI research.</p>
+              <p>I started learning about Data Science through the course &quot;Machine Learning A-Z&quot; on Udemy in 2021. Around this time I also came across <a href="https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/" className="hover:text-primary"><b>NVIDIA&apos;s GauGAN</b></a>, kickstarting my fascination with Deep Learning. My undergraduate studies and internship experiences have further deepened this knowledge, and I enjoy reading about leading AI research.</p>
             </Accordion>
 
             <Accordion title="Web Development" skills={["React", "NodeJS", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "HTML", "CSS", "TailwindCSS", "AlpineJS", "Astro", "Django"]}>
-              <p>I started my journey into web development in 2019 through the Harvard&apos;s CS50W course. Since then I have become well acquainted with full stack development through various projects and internship experiences.</p>
+              <p>I started my journey into web development in 2021 from Harvard&apos;s CS50W course. Since then I have become well acquainted with full stack development through various projects and internship experiences.</p>
             </Accordion>
 
             <Accordion title="Tools" skills={["Docker", "Git", "Bash", "AWS", "GCP", "Azure"]}>
-              <p>Through various internships, school assignments, and personal projects, I have containerized and deployed applications, and trained models on multiple cloud platforms. These experiences have made me proficient in cloud environments, version control, scripting, and working with the Linux terminal.</p>
+              <p>Various internships, school assignments, and personal projects have given plenty of experience with cloud environments, containerization, version control, bash scripting, and working with the Linux terminal.</p>
             </Accordion>
 
             <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
-              <p>My journey from aspiring game developer to data scientist and full stack developer has exposed me to a wide array of programming languages. I find it interesting to learn new languages, understand their applications, and explore the problems they aim to solve.</p>
+              <p>My journey from aspiring game developer to data science and full-stack roles has introduced me to a wide array of programming languages. I often tinker with newer, niche programming languages in some of my open-source work.</p>
             </Accordion>
           </section>
         </div>
