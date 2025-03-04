@@ -107,5 +107,5 @@ export const Particles: FC<ParticleProps> = (props: ParticleProps) => {
     }
   }, [props])
 
-  return <canvas ref={canvasRef} className="pointer-events-none fixed h-full w-full" />
+  return <canvas ref={canvasRef} className="pointer-events-none fixed size-full" />
 }

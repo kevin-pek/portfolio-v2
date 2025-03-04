@@ -19,7 +19,7 @@ export const Hero: FC = () => {
         <div className="mt-40 flex flex-col justify-center gap-16 lg:m-0 lg:w-1/2">
           <div>
             <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
-            <p className="mt-6 text-neutral-content">I'm currently a Software Engineer at Meta. Here you can find some of my random side projects. Occasionally I ramble about random things on my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>blog</b></a>.</p>
+            <p className="mt-6 text-neutral-content">I&apos;m currently a Software Engineer at Meta. Here you can find some of my random side projects. Occasionally I ramble about random things on my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>blog</b></a>.</p>
           </div>
           <div>
             <a target='_blank' href='files/resume.pdf' className="btn btn-outline btn-primary rounded-none">Resume</a>
