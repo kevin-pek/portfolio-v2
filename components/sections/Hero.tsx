@@ -19,10 +19,7 @@ export const Hero: FC = () => {
         <div className="mt-40 flex flex-col justify-center gap-16 lg:m-0 lg:w-1/2">
           <div>
             <h1 className="mb-4 text-base-content">Hi! 👋 I&apos;m <b className="text-primary">Kevin Pek</b></h1>
-
-            <h3 className="text-neutral-content">I like Computer Science, Math, Design, and everything in between.</h3>
-            <p className="mt-6 text-neutral-content">I enjoy building things and learning new skills, and I believe in making the world better through good design and software.</p>
-            <p className="mt-3 text-neutral-content">Over here you can find my work experience and some of my side projects. Occasionally I share how I solved problems that are interesting to me and nerd out about random things on my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>personal blog</b></a>.</p>
+            <p className="mt-6 text-neutral-content">I'm currently a Software Engineer at Meta. Here you can find some of my random side projects. Occasionally I ramble about random things on my <a href="https://blog.kevinpek.com" className="hover:text-primary"><b>blog</b></a>.</p>
           </div>
           <div>
             <a target='_blank' href='files/resume.pdf' className="btn btn-outline btn-primary rounded-none">Resume</a>
@@ -48,26 +45,24 @@ export const Hero: FC = () => {
         <div className="flex flex-col gap-6 lg:w-1/2">
           <div>
             <h2 className="text-base-content">About Me</h2>
-            <p className="mt-4 text-neutral-content">Back in 2013, I wrote my first &quot;Hello World&quot; program in C++. This started from my interest in game development, and a strong desire to build experiences that bring joy to others.</p>
-            <p className="mt-3 text-neutral-content">Since then, my interests have broadened significantly, and my lifelong goal is to find ways to apply the knowledge I have learnt to solve problems and make a difference.</p>
+            <p className="mt-4 text-neutral-content">Born and raised in Singapore, I graduated from NUS at the end of 2024. I first learnt programming in 2013 to make video games, and that kickstarted my love for learning random knowledge and skills.</p>
+            <p className="mt-3 text-neutral-content">I enjoy singing, art and movies, and I am always down to learn or experience something new.</p>
           </div>
 
           <section className="mt-8 flex flex-col gap-4">
-            <h2 className="text-base-content">Skills</h2>
-            <Accordion title="Data Science" skills={["sklearn", "PyTorch", "PaddlePaddle"]}>
-              <p>I started learning about Data Science through the course &quot;Machine Learning A-Z&quot; on Udemy in 2021. Around this time I also came across <a href="https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/" className="hover:text-primary"><b>NVIDIA&apos;s GauGAN</b></a>, kickstarting my fascination with Deep Learning. My undergraduate studies and internship experiences have further deepened this knowledge, and I enjoy reading about leading AI research.</p>
+            <h2 className="text-base-content">Skills & Interests</h2>
+            <Accordion title="AI/ML" skills={[]}>
+              <p>I started learning about this through the course &quot;Machine Learning A-Z&quot; on Udemy in 2021. Around this time I also came across <a href="https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/" className="hover:text-primary"><b>NVIDIA&apos;s GauGAN</b></a>, which started my fascination with Deep Learning and Generative AI.</p>
+              <p className="mt-3">My undergraduate coursework and internships have given me a deeper understanding of this topic, and I also play with various AI models in my side projects too.</p>
             </Accordion>
 
-            <Accordion title="Web Development" skills={["React", "NodeJS", "NextJs", "Express", "FastAPI", "Flask", "Spring Boot", "HTML", "CSS", "TailwindCSS", "AlpineJS", "Astro", "Django"]}>
-              <p>I started my journey into web development in 2021 from Harvard&apos;s CS50W course. Since then I have become well acquainted with full stack development through various projects and internship experiences.</p>
+            <Accordion title="Web Development" skills={[]}>
+              <p>I started my journey into web development in 2021 from Harvard&apos;s CS50W course. Since then it has become a skill I use frequently for various side projects.</p>
             </Accordion>
 
-            <Accordion title="Tools" skills={["Docker", "Git", "Bash", "AWS", "GCP", "Azure"]}>
-              <p>Various internships, school assignments, and personal projects have given plenty of experience with cloud environments, containerization, version control, bash scripting, and working with the Linux terminal.</p>
-            </Accordion>
-
-            <Accordion title="Programming Languages" skills={["Typescript", "Javascript", "Python", "C", "Java", "Swift", "C#", "Julia", "R", "Rust", "Lua"]}>
-              <p>My journey from aspiring game developer to data science and full-stack roles has introduced me to a wide array of programming languages. I often tinker with newer, niche programming languages in some of my open-source work.</p>
+            <Accordion title="Digital Art" skills={[]}>
+              <p>I originally learnt blender and photoshop to make assets for the games I wanted to make. This ended up spinning off into a new hobby.</p>
+              <p className="mt-3">Recently I have been learning to make interactive/generative art that mixes computer graphics with machine learning techniques.</p>
             </Accordion>
           </section>
         </div>

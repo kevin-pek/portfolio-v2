@@ -55,7 +55,7 @@ export const Projects = () => {
         <div className="right-0 w-full lg:absolute lg:w-1/3">
           <a target="_blank" href="https://github.com/kevin-pek/liftoff-vscode" rel="noreferrer">
             <Project title="Liftoff VS Code Theme" subheading="A Dark Theme for Visual Studio Code" tags={["VS Code", "Theme"]}>
-              <p>Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is easy on the eyes, and well suited for late night coding sessions.</p>
+              <p>Taking inspiration from various other themes such as Embark and Rose Pine, I made a theme that is well suited for late night coding sessions.</p>
               <Image placeholder="blur" src={liftoff} alt="liftoff vs code theme" className="lg:hidden" />
             </Project>
           </a>
